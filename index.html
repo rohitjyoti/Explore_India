@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Explore India</title>
+  </head>
+  <body>
+    <navbar class="nav">
+      <a href="#"><img src="/static/Logo.svg" alt="" width="80em" class="logo" /></a>
+      <ul class="menu">
+        <a href="#"><li class="menu-items">HOME</li></a>
+        <a href="#monument-sec"><li class="menu-items">EXPLORE</li></a>
+        <a href="#about-sec"><li class="menu-items">ABOUT</li></a>
+        <a href="#contact"><li class="menu-items">CONTACT</li></a>
+      </ul>
+    </navbar>
+
+    <div class="home-pg">
+      <div class="home-desc">
+        <p class="home-heading">
+          EXPLORE <span class="highlight">India</span><br />
+          USING <span class="highlight">Three JS</span>
+        </p>
+        <p class="description ">
+          Welcome to our interactive website of Asian monuments, powered by the
+          Three.js JavaScript library. Explore the diverse geography, culture,
+          and history of this vast region by panning, zooming, and clicking on
+          different models. Learn about different types of monuments and their
+          structure from single window. Dive deeper into the unique monuments of
+          Asia through our multimedia content and interactive features. We hope
+          you enjoy your virtual tour of this fascinating continent.
+        </p>
+        <a href="#monument-sec" class="btn-explore"
+          ><button class="btn explore" id="btn">Let's Explore</button></a
+        >
+      </div>
+      <div class="earth" id="canvasContainer">
+        <canvas></canvas>
+      </div>
+    </div>
+
+    <div id="monument-sec"></div>
+    <div class="container" id="container">
+      <div class="heading fade">Monuments</div>
+      <div class="grid-monument">
+        <div class="img-container hidden2">
+          <a href="/Pages/tajmahal.html" class="monument-link">
+            <img
+              src="/static/taj_mahal.jpg"
+              alt=""
+              class="tajMahal monument-img"
+
+            />
+          </a>
+          <div class="monument-name">Taj Mahal</div>
+        </div>
+        <div class="img-container hidden2">
+          <a href="/Pages/qutub_minar.html" class="monument-link"
+            ><img
+              src="/static/qutub-minar.jpg"
+              alt=""
+              class="tajMahal monument-img"
+
+          /></a>
+          <div class="monument-name">Qutub Minar</div>
+        </div>
+        <div class="img-container hidden2">
+          <a href="/Pages/kedarnath.html" class="monument-link"
+            ><img
+              src="/static/Kedarnath_Temple.jpg"
+              alt=""
+              class="tajMahal monument-img"
+
+          /></a>
+          <div class="monument-name">Kedarnath Temple</div>
+        </div>
+        <div class="img-container hidden">
+          <a href="/Pages/Ayodhya.html" class="monument-link"
+            ><img
+              src="/static/Ayodhya.jpg"
+              alt=""
+              class="tajMahal monument-img"
+
+          /></a>
+          <div class="monument-name">Ayodhya</div>
+        </div>
+        <div class="img-container hidden">
+          <a href="/Pages/Lotus_temple.html" class="monument-link"
+            ><img
+              src="/static/LotusTemple.jpg"
+              alt=""
+              class="tajMahal monument-img"
+              
+          /></a>
+          <div class="monument-name">Lotus Temple</div>
+        </div>
+        <div class="img-container hidden">
+          <a href="/Pages/india_gate.html" class="monument-link"
+            ><img
+              src="/static/indiaGate.jpg"
+              alt=""
+              class="tajMahal monument-img"
+
+          /></a>
+          <div class="monument-name">India Gate</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about-sec"></div>
+    <div class="about-section">
+      <div class="heading fade">About Website</div>
+      <div class="about-section-info">
+        <p class="info">
+          Three.js is a JavaScript library that allows developers to create and
+          display 3D graphics on web browsers using WebGL. It can be used to
+          create a wide range of interactive 3D experiences, such as games,
+          visualizations, and product configurators. To use Three.js on a
+          website, you would need to include the Three.js library in your HTML
+          file and then use JavaScript to create and manipulate 3D objects.This
+          website display's popular tourist destinations in the form of 3D
+          models, allowing users to explore and interact with the models in a
+          virtual environment. The website may also include information
+          destinations such as Historical context, cultural significance,
+          recommended activities. One of the key features of Three.js is its use
+          of WebGL, which allows for hardware-accelerated 3D graphics in the
+          browser.Additionally, the tourism website could include other features
+          such as information about accommodations, transportation, and
+          activities, making it a complete platform for tourism-related
+          information and planning.
+        </p>
+        <div class="threejs-img-container hidden2">
+          <img src="/static/threejs.svg" alt="Three Js" width="400px" />
+          <span class="heading-2 highlight">Three JS</span>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-section hidden" id="contact">
+      <div class="footer-info">
+        <div class="footer-child1">
+          <h3 class="heading-3">Let's Socalize</h3>
+          <div class="social-icons">
+            <img src="/static/facebook.svg" alt="" class="social-icon" />
+            <img src="/static/insta.svg" alt="" class="social-icon" />
+            <img src="/static/google.svg" alt="" class="social-icon" />
+            <img src="/static/Youtube.svg" alt="" class="social-icon" />
+          </div>
+          <a href="#"><img class="logo" src="/static/Logo.svg" alt="" width="100px" /></a>
+        </div>
+        <div class="footer-child2">
+          <h3 class="heading-3">Travel Specialist</h3>
+          <ul class="tour-planners">
+            <a
+              target="_blank"
+              href="https://www.trivago.in/"
+              class="tour-planner"
+              ><li>Trivago</li></a
+            >
+            <a target="_blank" href="https://www.makemytrip.com/"
+              ><li>MakeMyTrip</li></a
+            >
+            <a
+              target="_blank"
+              href="https://www.agoda.com/hotels-near-taj-mahal/attractions/agra-in.html?cid=1844104"
+              ><li>Agoda</li></a
+            >
+            <a target="_blank" href="https://tourism.gov.in/"
+              ><li>Tourism India</li></a
+            >
+          </ul>
+        </div>
+        <div class="footer-child3">
+          <h3 class="heading-3">Contact Us</h3>
+          <div class="emails">
+            <div class="email">rohit21dev@gmail.com</div>
+            <div class="email">varad.uplanchiwar22@vit.edu</div>
+            <div class="email">akshay.chame22@vit.edu</div>
+            <div class="email">malhar.joshi22@vit.edu</div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <small>&copy; Copyright 2023. All Rights Reserved</small>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+    <script src="/JS_Modules/anim.js"></script>
+  </body>
+</html>

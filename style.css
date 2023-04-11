@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600&family=Inter:wght@500&family=Lobster+Two&family=Poppins:wght@400;500;700&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;              
+}
+
+body::-webkit-scrollbar-track {
+    background: black;      
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+    border-radius: 20px;       
+    border: 3px solid rgb(162, 162, 162);  
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    /* background: #000; */
+    background: rgb(32,29,65);
+    background: linear-gradient(56deg, rgba(32,29,65,1) 0%, rgba(22,18,62,1) 16%, rgba(18,14,52,1) 86%, rgba(32,29,65,1) 100%);
+    color: #fff;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    border-radius: 1em;
+    width: 40%;
+    padding: 1em;
+    background: rgb(30, 115, 30);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    background: rgb(32,29,65);
+    background: linear-gradient(56deg, rgba(32,29,65,1) 0%, rgba(22,18,62,1) 16%, rgba(18,14,52,1) 86%, rgba(32,29,65,1) 100%);
+}
+
+.nav > ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7em;
+    padding: 1em 0;
+    color: rgb(168, 168, 168);
+}
+
+li {
+    margin: 1em;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #fff; 
+    transition: 0.1s ease-in-out;
+}
+
+.home-pg {
+    display: flex;
+}
+
+.home-desc {
+    padding: 15% 4em;
+    width: 50%;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-heading {
+    margin: 1.2em 0 0.2em 0;
+    font-size: 4.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.heading {
+    margin: 0.5em 0;
+    font-size: 4.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.heading-2 {
+    font-size: 4em;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: white;
+}
+
+.highlight {
+    font-family: 'Lobster Two', cursive;
+    font-weight: bold;
+    color: rgb(146, 164, 255);
+}
+
+.description, .info{
+    font-size: 1.3em;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5em;
+    text-align: justify;
+    color: rgb(158, 158, 158);
+    margin-bottom: 1em;
+}
+
+.earth {
+    width: 50%;
+    height: 100vh;
+}
+
+.container {
+    padding: 0 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    position: absolute;
+    margin: 0em 1em;
+    padding: 0px 0;
+}
+
+.monument-img {
+    width: 400px;
+    height: 300px;
+    border: 0px solid rgba(255, 255, 255, .10);
+    box-shadow: 0 0 50px 0.1px rgba(0, 0, 0, 0.85);
+    border-radius: 2em;    
+    margin-bottom: 1em;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.monument-name {
+    opacity: 1;
+}
+
+.monument-img:hover {
+    transform: scale(1.05);
+    transition: 0.4s ease-in-out;
+    -webkit-filter: blur(0.5px);
+    
+}
+
+.monument-link, .monument-img:hover{
+    opacity: 0.7;
+    transition: 0.4s ease-in-out;
+}
+
+.grid-monument {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5em;
+}
+
+
+.about-section {
+    background: #000;
+    margin-top: 5em;
+    padding: 2em 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+}
+
+.about-section-info {
+    display: flex;
+}
+
+.about-section-info > .info {
+    width: 60%;
+    padding: 1.5em;
+    margin-left: 1em;
+}
+
+.threejs-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+footer{
+    width: 100%;
+    color: #c4c4c4;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.footer-info {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    width: 100%;
+    border-top: 0.1px solid rgb(32, 32, 32);
+    color: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4% 0 3% 0;
+    font-weight: 400;
+}
+
+.tour-planners {
+    padding: 0 0.5em;
+    margin: 1em;
+}
+
+.explore {
+    width: max-content;
+    padding: 1em 1.2em;
+}
+
+.explore:hover {
+    opacity: 0.8;
+    transform: scale(1.06);
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons{
+    margin: 2rem 0;
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+}
+
+.social-icon {
+    opacity: 0.5;
+    width: 1.5rem;
+}
+
+.social-icon:hover {
+    opacity: 1;
+    transition: 0.4s ease;
+}
+
+.emails {
+    margin-top: 1em;
+}
+
+.email {
+    padding-top: 0.4em;
+}
+
+@media screen and (max-width: 1024px) {
+    .home-desc {
+        padding: 5% 2em;
+        width: 50%;
+        height: 100vh;
+    }
+    .home-heading {
+        margin: 0.4em 0 0.1em 0;
+        font-size: 4.2em;
+    }
+}
+  
+
+@media screen and (max-width: 900px) {
+    .home-pg {
+            display: flex;
+            flex-direction: column;
+    }
+
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .about-section-info > .info {
+        margin: 0;
+    }
+
+    .home-desc {
+        height: max-content;
+        padding: 15% 4em;
+        width: 100%;
+    }
+
+    .canvasContainer  {
+        width: 100%;
+    }
+
+    .earth {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .grid-monument {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-gap: 2em;
+
+    }
+
+    #monument-sec {
+        width: 40%;
+    }
+
+    .monument-img {
+        width: 350px;
+        height: 250px;
+    }
+
+    .about-section {
+        height: max-content;
+    }
+
+    .about-section-info {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home-heading {
+        margin: auto;
+        padding-bottom: 0.5em;
+    }
+
+
+    .btn-explore {
+        margin: auto;
+    }
+
+    .about-section-info > .info , .threejs-img-container{
+        padding: 0 2em;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .home-pg {
+            display: flex;
+            flex-direction: column;
+    }
+
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .about-section-info > .info {
+        margin: 0;
+    }
+
+    .home-heading {
+        font-size: 3.5em;
+    }
+
+    .description , .info{
+        font-size: 1.1em;
+        padding-bottom: 1em;
+    }
+
+    .heading , .heading-2 {
+        font-size: 3.5em;
+        margin: 0.2em 0;
+    }
+
+    .home-desc {
+        height: max-content;
+        padding: 5em 2em 1em 2em;
+        width: 100%;
+    }
+
+    .canvasContainer  {
+        width: 100%;
+    }
+
+    .earth {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .grid-monument {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-gap: 2em;
+
+    }
+
+    #monument-sec {
+        width: 40%;
+    }
+
+    .monument-img {
+        width: 250px;
+        height: 170px;
+    }
+
+    .about-section {
+        margin-top: 1em;
+        height: max-content;
+    }
+
+    .about-section-info {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home-heading {
+        margin: auto;
+        padding-bottom: 0.5em;
+    }
+
+
+    .btn-explore {
+        margin: auto;
+    }
+
+    .threejs-img-container > img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-section-info > .info , .threejs-img-container{
+        padding: 0 2em;
+        margin: 0;
+        width: 100%;
+    }
+
+    .footer-info {
+        margin-top: 0;
+        padding: 1em;
+    }
+
+    .tour-planners, .email {
+        font-size: 0.8em;
+    } 
+
+    .social-icons {
+        width: 8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home-pg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .about-section-info > .info {
+        margin: 0;
+    }
+
+    .home-heading {
+        font-size: 3.5em;
+    }
+
+    .description , .info{
+        font-size: 1.1em;
+        padding-bottom: 1em;
+    }
+
+    .heading , .heading-2 {
+        font-size: 3.5em;
+        margin: 0.2em 0;
+    }
+
+    .home-desc {
+        height: max-content;
+        padding: 5em 2em 1em 2em;
+        width: 100%;
+    }
+
+    .canvasContainer  {
+        width: 100%;
+    }
+
+    .earth {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .grid-monument {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-gap: 2em;
+
+    }
+
+    #monument-sec {
+        width: 40%;
+    }
+
+    .monument-img {
+        width: 250px;
+        height: 170px;
+    }
+
+    .about-section {
+        margin-top: 1em;
+        height: max-content;
+    }
+
+    .about-section-info {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home-heading {
+        margin: auto;
+        padding-bottom: 0.5em;
+    }
+
+
+    .btn-explore {
+        margin: auto;
+    }
+
+    .threejs-img-container > img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-section-info > .info , .threejs-img-container{
+        padding: 0 2em;
+        margin: 0;
+        width: 100%;
+    }
+
+    .footer-info {
+        margin-top: 0;
+        padding: 1em;
+    }
+
+    .tour-planners, .email {
+        font-size: 0.8em;
+    } 
+
+    .social-icons {
+        width: 8rem;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .home-pg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .about-section-info > .info {
+        margin: 0;
+    }
+
+    .home-heading {
+        font-size: 2.4em;
+    }
+
+    .description , .info{
+        font-size: 0.8em;
+        padding-bottom: 1em;
+    }
+
+    .heading , .heading-2 {
+        font-size: 2.5em;
+        margin: 0.2em 0;
+    }
+
+    .home-desc {
+        height: max-content;
+        padding: 5em 2em 1em 2em;
+        width: 100%;
+    }
+
+    .canvasContainer  {
+        width: 100%;
+    }
+
+    .earth {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .grid-monument {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+
+    }
+
+    #monument-sec {
+        width: 40%;
+    }
+
+    .monument-img {
+        width: 250px;
+        height: 170px;
+    }
+
+    .about-section {
+        margin-top: 1em;
+        height: max-content;
+    }
+
+    .about-section-info {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home-heading {
+        margin: auto;
+        padding-bottom: 0.5em;
+    }
+
+    .heading-3 {
+        padding-right: 0.5em;
+        font-size: 0.8em;
+    }
+
+    .btn-explore {
+        margin: auto;
+    }
+
+    .threejs-img-container > img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-section-info > .info , .threejs-img-container{
+        padding: 0 2em;
+        margin: 0;
+        width: 100%;
+    }
+
+    .footer-info {
+        margin-top: 0;
+        padding: 1em;
+    }
+
+    .tour-planners, .email {
+        font-size: 0.6em;
+    } 
+
+    .social-icons {
+        margin: 1em 0;
+        width: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.5em;
+    }
+
+    .nav > ul {
+        justify-content: end;
+    }
+
+    .menu-items {
+        padding: 0.4em;
+        margin: 0.4em;
+    }
+
+    .logo {
+        width: 50px;
+        position: absolute;
+        margin: 0em 1em;
+        padding: 0px 0;
+    }
+
+    .tour-planners {
+        margin-left: 0;
+    }
+
+    li {
+        font-size: 1em;
+        padding: 0.5em 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    small {
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .menu-items {
+        font-size: 0.8em;
+    }
+}
+
+/* Animation */
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.5s;
+}
+
+.hidden2 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 0.5s;
+}
+
+.fade{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
